@@ -1,0 +1,106 @@
+h1 {
+    color: goldenrod;
+    margin-bottom: 10px;
+}
+
+body {
+    background-image: url("image.jpg");
+    background-color: #016f32; /* Fallback color if image fails to load */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#message-el {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 10px;
+    height: 1.5em; /* Fixed height to prevent layout shifts */
+}
+
+button {
+    width: 150px;
+    background-color: goldenrod;
+    color: #016f32;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d4a017;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#gameCards, #gameButtons {
+    margin-top: 20px;
+}
+
+#gameCards p {
+    margin: 5px 0;
+}
+
+#streak-el {
+    color: #FFD700;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    margin: 5px;
+    padding: 8px;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #016f32;
+}
+
+input:focus {
+    outline: none;
+    border-color: #d4a017;
+    box-shadow: 0 0 5px goldenrod;
+}
+
+.rules-container {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rules-container ul {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.rules-container li {
+    margin-bottom: 5px;
+}
+
+.result-summary {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 300px;
+}
+
+.result-summary p {
+    margin: 5px 0;
+}
