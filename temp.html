@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Blackjack Game</title>
+</head>
+<body>
+    <h1>Blackjack</h1>
+    <p id="player-el"></p>
+    <p id="message-el">Want to play a round?</p>
+    <div id="gameCards">
+        <!-- Game elements will be inserted dynamically -->
+    </div>
+    <div id="gameButtons">
+        <!-- Buttons will be inserted dynamically -->
+    </div>
+    <div id="newGame">
+        <!-- Restart button will be inserted dynamically -->
+    </div>
+    <div>
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="number" id="bet" placeholder="Bet Amount">
+    </div>
+    <button id="startButton" onclick="startGame(document.getElementById('name').value, document.getElementById('bet').value)">START GAME</button>
+    <div id="rules" class="rules-container">
+        <h3>Game Rules:</h3>
+        <ul>
+            <li>Try to get as close to 21 without going over</li>
+            <li>Dealer must draw until 17 or higher</li>
+            <li>Blackjack pays 2.5x your bet</li>
+            <li>Draw your Lucky Card for a 10 chip bonus!</li>
+            <li>Win Streak Multipliers:
+                <ul>
+                    <li>2 wins in a row: 1.2x multiplier</li>
+                    <li>3-4 wins in a row: 1.5x multiplier</li>
+                    <li>5+ wins in a row: 2.0x multiplier</li>
+                </ul>
+            </li>
+            <li>See how high you can go!</li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
